@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+         .internalcontainerL{
+      flex: 1;
+      background: rgb(214, 188, 72);
+      padding: 30px;
+      font-size: 12px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin: 3px;
+      font-size: 20px;
+         }
+
+      body {
+  background-image: url("background/background/2back.jpg");
+}
+
+    h2 {text-align: center;}
+    
+    
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 50px;}
+    
+    .box{
+        text-align: center;
+    }
+    .contactinfo .box .icon{
+        min-width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contactinfo .box .text{
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        flex-direction: column;
+        font-weight: 300;
+    }
+   .container{
+       width: 90%;
+       display: grid;
+       grid-template-columns: repeat(auto fit, minmax(250px, 1fr));
+       grid-gap: 20px;
+   }
+
+    .box{
+       height: 200px;
+       color: black;
+       border: 1px solid black;
+       position: relative;
+   }
+    
+    </style>
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right w3-yellow" style="width:200px;right:0;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="student.html" class="w3-bar-item w3-button">STUDENT</a>
+        <a href="home.html" class="w3-bar-item w3-button">HOMEPAGE</a>
+        <a href="PERSONAL2.HTML" class="w3-bar-item w3-button">PERSONAL DETAILS</a>
+        <a href="EDUCATIONAL2.HTML" class="w3-bar-item w3-button">EDUCATIONAL</a>
+        <a href="cucuriculum.html" class="w3-bar-item w3-button">CUCURICULUM</a>
+        <a href="working2.html" class="w3-bar-item w3-button">WORKING EXPERIENCE</a>
+        <a href="CONTACT.HTML" class="w3-bar-item w3-button">CONTACT ME</a>   
+      </div>
+      
+      <div class="w3-main" style="margin-right: 100px">
+      <div class="w3-yellow">
+        <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+          <h1>My Page</h1>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <p><div class="internalcontainerL">
+            <div class="container">
+            <h2>CONTACT ME</h2>
+            <div class="contactinfo">
+                <div class="box">
+                    <p><div class="icon"><i class="far fa-envelope"></i> Email -  hadifzakwan00@icloud.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone"></i> <p>Call -  013-7910470</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fab fa-instagram"></i> <p>Instagram -    adibzn</p>
+                    </div>
+                </div>
+            </div>
+         </div></p>
+        
+      </div>
+      
+      </div>
+
+        <footer>
+          <center><p style="color:white;">&copy;Copyright 2021, Muhamad Hadif Zakwan. All Right Reserved.</p><p style="color:white;">All Right Reserved 
+            Terms & Conditions. Privacy Policy. *Assigment Purpose Only*</p></center>
+        </footer>
+    
+      
+    
+
+
+      <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    
+      </script>

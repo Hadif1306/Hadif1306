@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+    <style>
+      
+
+        
+        body {
+  background-image: url("background/background/2back.jpg");
+  }
+
+    .internalcontainerL{
+      flex: 1;
+      background-color: rgb(214, 188, 72);
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+
+    .dasimages {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 768px){
+      .holdingcontainer{
+        flex-direction: column-reverse;
+      }
+    }
+    h1 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;}
+    h2 {text-align: center;}
+
+    .container{
+      width: 800px;
+      margin: 50px auto 0;
+      display: table;
+      box-sizing: border-box;
+    }
+    .row{
+      margin: 10px 0;
+      
+    }
+    .column{
+      background: rgb(128, 125, 125);
+      display: table-cell;
+      padding: 10px;
+      width: 1%;
+      text-align: center;
+      color: black;
+      vertical-align: middle;
+      border-right: 10px solid #ffc728;
+      border-left: 10px solid#ffc728 ;
+    }
+    .row :nth-child(1) .column:nth-child(1)
+    {
+      background: grey;
+    }
+    .row :nth-child(2) .column:nth-child(2)
+    {
+      background: wheat;
+    }
+    .internalcontainerM{
+      flex: 1;
+      padding: 30px;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+    </style>
+</head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right w3-yellow " style="width:200px;right:0;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+            <a href="student.html" class="w3-bar-item w3-button">STUDENT</a>
+            <a href="home.html" class="w3-bar-item w3-button">HOMEPAGE</a>
+            <a href="PERSONAL2.HTML" class="w3-bar-item w3-button">PERSONAL DETAILS</a>
+            <a href="EDUCATIONAL2.HTML" class="w3-bar-item w3-button">EDUCATIONAL</a>
+            <a href="cucuriculum.html" class="w3-bar-item w3-button">CUCURICULUM</a>
+            <a href="working2.html" class="w3-bar-item w3-button">WORKING EXPERIENCE</a>
+            <a href="CONTACT.HTML" class="w3-bar-item w3-button">CONTACT ME</a>   
+          </div>
+          
+          
+          <div class="w3-main" style="margin-right:200px">
+          <div class="w3-yellow">
+            <button class="w3-button w3-yellow w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+              <h1>My Page</h1>
+            </div>
+          </div>
+        
+          <div class="w3-container">
+            <div class="internalcontainerL"><h2>SEKOLAH MENENGAH KEBANGSAAN LAKSAMANA</h2><img class="dasimages" src="image/logo.jpg" width="15%"/>
+              <div class="container">
+                <div class="row">
+                  <div class="column">
+                    <h2>MIDDLE SCHOOL</h2>
+                    <p>- FOOTBALL CLUB SCRETERY</p>
+                    <p>- AJK PBSM</p>
+                    <p>- NASYID REGIONAL CHAMPION</p>
+                    <p>- FOOTBAL SCHOOL CHAMPION</p>  
+                  </div>
+                  <div class="column">
+                    <h2>HIGH SCHOOL</h2>
+                    <p>- SCHOOL PREFECTS</p>
+                    <p>- AJK BADMINTON CLUB</p>
+                    <p>- FUTSAL SCHOOL CHAMPION</p>
+                    <p>- FUTSAL REGIONAL CHAMPION</p>
+                  </div>
+                  <div class="internalcontainerM">
+                    <div class="container">
+                      <div class="row">
+                        <div class="column">
+                          <img class="dasimages" src="image/sijil 1.jpg" width="50%"/>
+                        </div>
+                        <div class="column">
+                          <img class="dasimages" src="image/sijil 2.jpg" width="50%"/>
+                        </div>
+                        <div class="column">
+                          <img class="dasimages" src="image/sijil 3.jpg" width="50%"/>  
+                        </div>
+    
+             </div>
+          </div>
+    
+              <footer>
+                <center><p style="color:white;">&copy;Copyright 2021, Muhamad Hadif Zakwan. All Right Reserved.</p><p style="color:white;">All Right Reserved 
+                 & Conditions. Privacy Policy. *Assigment Purpose Only*</p></center>
+              </footer>
+            
+
+                <script>
+                  function w3_open() {
+                    document.getElementById("mySidebar").style.display = "block";
+                  }
+                  
+                  function w3_close() {
+                    document.getElementById("mySidebar").style.display = "none";
+                  }
+                
+                  </script>
+      

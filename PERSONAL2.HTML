@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+    <style>
+        .internalcontainerL{
+      flex: 1;
+      background:rgb(214, 188, 72);
+      padding: 30px;
+      font-size: 12px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin: 3px;
+      font-size: 20px;
+    }
+    body {
+  background-image: url("background/background/2back.jpg");
+}
+    .internalcontainerL{
+        background-image: url("image/h.jpg");
+    }
+    h1 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;}
+
+    video {display:block;
+            margin-left:auto;
+            margin-right:auto;
+            position: relative;
+            max-width: 100%;
+            display: flex;
+            background: whitesmoke;
+            padding: 15px;
+            box-sizing: border-box;
+            flex-direction: row; 
+             }
+    </style>
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right w3-yellow" style="width:200px;right:0;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="student.html" class="w3-bar-item w3-button">STUDENT</a>
+        <a href="home.html" class="w3-bar-item w3-button">HOMEPAGE</a>
+        <a href="PERSONAL2.HTML" class="w3-bar-item w3-button">PERSONAL DETAILS</a>
+        <a href="EDUCATIONAL2.HTML" class="w3-bar-item w3-button">EDUCATIONAL</a>
+        <a href="cucuriculum.html" class="w3-bar-item w3-button">CUCURICULUM</a>
+        <a href="working2.html" class="w3-bar-item w3-button">WORKING EXPERIENCE</a>
+        <a href="CONTACT.HTML" class="w3-bar-item w3-button">CONTACT ME</a>   
+      </div>
+      
+      <div class="w3-main" style="margin-right:200px">
+      <div class="w3-yellow">
+        <button class="w3-button w3-teal w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+          <h1>My Page</h1>
+        </div>
+      </div>
+      
+      <div class="w3-container">
+        <p><div class="internalcontainerL"><h1>MY DETAILS</h1>
+            <p>NAME: MUHAMAD HADIF ZAKWAN BIN NORIZAL</p>
+            <p>AGE: 21 YEARS OLD</p>
+            <p>DATE OF BIRTH: 13TH JUNE 2000</p>
+            <p>PLACE OF BIRTH: HOSPITAL SULTANAH AMINAH, JOHOR BAHRU</p>
+            <p>COURSE: SYSTEM MANAGEMENT (IM245)</p>
+            <p>FACULTY: INFORMATION MANAGEMENT</p>
+            <p>CAMPUS: UITM PUNCAK PERDANA</p>
+            <p>ADRESS: NO 182,JALAN BUNGA MAWAR, FELDA PASAK, KOTA TINGGI, JOHOR 81960</p>
+            <p>RACE: MELAYU</p>
+            <p>RELIGION: ISLAM</p>
+            <p>NATIONALITY: MALAYSIA</p>
+            <p>MARIAL STATUS: SINGLE</p>
+            <p>EMAIL: hadifzakwan00@icloud.com</p>
+            <p>POSITION: STUDENT</p>
+            
+            <video width="320" height="240" controls>
+              <source src="video/IMG_7259.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+         </div></p>
+      </div>
+      
+      </div>
+      
+      <footer>
+        <center><p style="color:white;">&copy;Copyright 2021, Muhamad Hadif Zakwan. All Right Reserved.</p><p style="color:white;">All Right Reserved 
+          Terms & Conditions. Privacy Policy. *Assigment Purpose Only*</p></center>
+      </footer>
+
+      <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    
+      </script>
+    
